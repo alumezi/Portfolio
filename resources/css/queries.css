@@ -1,0 +1,94 @@
+
+
+
+
+@media only screen and (max-width: 1170px) {
+.col{
+  height: 50px;
+  width: 94%;
+  margin-top: 0;
+}
+.testimonial img, .testimonial{
+  width: 20%;
+  height: 20%;
+  font-size: 100%;
+  margin-left: 7%;
+}
+.testimonial p{
+  font-size: 60%;
+}
+figure img{
+  width: 100px;
+  height: 100px;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 946px) {
+.box{
+  font-size: 80%;
+}
+.col{
+  height: 50px;
+  width: 90%;
+}
+
+.testimonial img, .testimonial{
+  width: 20%;
+  height: 20%;
+  font-size: 80%;
+  margin-left: 7%;
+}
+.testimonial p{
+  font-size: 60%;
+}
+figure img{
+  width: 100px;
+  height: 100px;
+}
+.logo img{
+  width: 50px;
+  
+}
+
+}
+
+@media only screen and (max-width: 640px){
+  .hero{
+    height: 600px;
+  }
+  .box{
+  font-size: 50%;
+}
+.col{
+  height: 30px;
+  font-size: 80%;
+}
+section{
+  margin-top: 30px;
+}
+
+.testimonial img, .testimonial{
+  width: 15%;
+  height: 20%;
+  font-size: 50%;
+  margin-left: 7%;
+}
+.testimonial p{
+  font-size: 60%;
+}
+figure img{
+  width: 100px;
+  height: 100px;
+}
+.logo img{
+  width: 40px; 
+}
+section a h3{
+  margin-top:7px;
+}
+
+}
