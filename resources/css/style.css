@@ -136,6 +136,7 @@ svg{
 
 /*--------Certificates-----------*/
 .certificates{
+  z-index: 0;
   background-color: rgb(62, 62, 62);
   height: 100vh;
 }
@@ -152,30 +153,38 @@ svg{
   z-index: 0;
   margin-top: 15%;
 }
-.hidden img{
-  left: 14%;
-  top: 90px;
-  width: 70%;
-  height: 80%;
+.hidden #img{
+  left: 27%;
+  top: 15%;
+  max-height: 80%;
+  max-width:800px;
   position: fixed;
 }
 .hidden{
+  padding-top: 100px; /* Location of the box */
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.2);
   position: fixed;
   display: none;
   z-index: 1;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 .hidden i{
   position: fixed;
-  right: 100px;
-  top: 20px;
+  right: 250px;
+  top: 120px;
   font-size: 40px;
   color: black;
+  z-index: 2;
+}
+#more{
+  right: 300px;
 }
 .mit:hover{
-  opacity:0.7;
+  opacity:0.9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2)
 }
 .hidden img, #caption { 
     animation-name: zoom;
@@ -184,6 +193,10 @@ svg{
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
+}
+.certificates p{
+  display: inline-block;
+  margin-left: 100px;
 }
 
 

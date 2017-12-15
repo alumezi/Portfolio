@@ -36,8 +36,11 @@ $(window).ready(function(){
 
 
 
-$('.mit').click(function(){
+$('.mit').click(function(evt){
+	evt.preventDefault();
 	var source = $(this).attr('src');
+	var info = $(this).attr('alt');
+	$('#info').attr('href', info);
 	$('#img').attr('src',source);
 	$('.hidden').css('display','block');
 });
