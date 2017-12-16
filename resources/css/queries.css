@@ -2,10 +2,29 @@
 
 
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1300px) {
+  .tech{
+  position: relative;
+  top: 100px;
+}
+
+    .element{
+  position: relative;
+  top: 10px;
+  }
+  .element img{
+    width: 100px;
+    height: 100px;
+  }
+  .col2{
+    width: 20%;
+  }
+  .stickyCol{
+    width: 20%;
+  }
 .col{
-  height: 50px;
-  width: 94%;
+  height: 40px;
+  width: 90%;
   margin-top: 0;
 }
 .testimonial img, .testimonial{
@@ -28,11 +47,28 @@ figure img{
 
 
 @media only screen and (max-width: 946px) {
+
+    .tech{
+  position: relative;
+  top:10px;
+}
+.element{
+  padding: 0;
+  top:10px;
+}
+
+    .element img{
+    width: 30px;
+    height: 30px;
+  }
+.sticky{
+  font-size: 10%;
+}
 .box{
-  font-size: 80%;
+  font-size: 70%;
 }
 .col{
-  height: 50px;
+  height: 40px;
   width: 90%;
 }
 
@@ -57,8 +93,17 @@ figure img{
 }
 
 @media only screen and (max-width: 640px){
+  .element{
+    top: 50px;
+    padding: 0;
+  }
+
+      .tech{
+  position: relative;
+  top: 50px;
+}
   .hero{
-    height: 600px;
+    height: 700px;
   }
   .box{
   font-size: 50%;

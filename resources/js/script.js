@@ -65,8 +65,8 @@ var waypoint = new Waypoint({
 var waypoint2 = new Waypoint({
 	element : $('.certificates'),
 	handler: function(direction){
-		$('#sticky-port').toggleClass('col').toggleClass('stickyCol');
-		$('#sticky-cert').toggleClass('col').toggleClass('stickyCol');
+		$('#sticky-port').toggleClass('col2').toggleClass('stickyCol');
+		$('#sticky-cert').toggleClass('col2').toggleClass('stickyCol');
 	},
 	offset:20
 });
@@ -74,8 +74,8 @@ var waypoint2 = new Waypoint({
 var waypoint3 = new Waypoint({
 	element : $('.contact'),
 	handler: function(direction){
-		$('#sticky-con').toggleClass('col').toggleClass('stickyCol');
-		$('#sticky-cert').toggleClass('col').toggleClass('stickyCol');
+		$('#sticky-con').toggleClass('col2').toggleClass('stickyCol');
+		$('#sticky-cert').toggleClass('col2').toggleClass('stickyCol');
 	},
 	offset:20
 })
