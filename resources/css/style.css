@@ -275,7 +275,6 @@ font-size: 85px;
 
 .contact{
   height: 400px;
-  max-height: 400px;
   color:#20944B;
 }
 
@@ -292,4 +291,26 @@ footer{
 .footer{
   display: block;
   padding: 10px;
+}
+
+
+.a{
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-bottom: 4px solid teal;
+    animation-name: earth;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes earth{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
