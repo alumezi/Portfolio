@@ -1,139 +1,27 @@
+@media only screen and (max-width: 900px) {
+	.person img{
+		display: none;
+	}
+	figure img{
+		height: 100px;
+		width: 100px;
+	}
+	.col{
+		flex-direction: column;
+		width: 100%;
 
-
-
-
-@media only screen and (max-width: 1300px) {
-  .tech{
-  position: relative;
-  top: 100px;
-}
-
-    .element{
-  position: relative;
-  top: 10px;
-  }
-  .element img{
-    width: 100px;
-    height: 100px;
-  }
-  .col2{
-    width: 20%;
-  }
-  .stickyCol{
-    width: 20%;
-  }
-.col{
-  height: 40px;
-  width: 90%;
-  margin-top: 0;
-}
-.testimonial img, .testimonial{
-  width: 20%;
-  height: 20%;
-  font-size: 100%;
-  margin-left: 7%;
-}
-.testimonial p{
-  font-size: 60%;
-}
-figure img{
-  width: 100px;
-  height: 100px;
-}
-
-
-}
-
-
-
-@media only screen and (max-width: 946px) {
-
-    .tech{
-  position: relative;
-  top:10px;
-}
-.element{
-  padding: 0;
-  top:10px;
-}
-
-    .element img{
-    width: 30px;
-    height: 30px;
-  }
-.sticky{
-  font-size: 10%;
-}
-.box{
-  font-size: 70%;
-}
-.col{
-  height: 40px;
-  width: 90%;
-}
-
-.testimonial img, .testimonial{
-  width: 20%;
-  height: 20%;
-  font-size: 80%;
-  margin-left: 7%;
-}
-.testimonial p{
-  font-size: 60%;
-}
-figure img{
-  width: 100px;
-  height: 100px;
-}
-.logo img{
-  width: 50px;
-  
-}
-
-}
-
-@media only screen and (max-width: 640px){
-  .element{
-    top: 50px;
-    padding: 0;
-  }
-
-      .tech{
-  position: relative;
-  top: 50px;
-}
-  .hero{
-    height: 700px;
-  }
-  .box{
-  font-size: 50%;
-}
-.col{
-  height: 30px;
-  font-size: 80%;
-}
-section{
-  margin-top: 30px;
-}
-
-.testimonial img, .testimonial{
-  width: 15%;
-  height: 20%;
-  font-size: 50%;
-  margin-left: 7%;
-}
-.testimonial p{
-  font-size: 60%;
-}
-figure img{
-  width: 100px;
-  height: 100px;
-}
-.logo img{
-  width: 40px; 
-}
-section a h3{
-  margin-top:7px;
-}
-
+	}
+	.hero{
+		height: 800px;
+	}
+	.element{
+		padding: 0;
+	}
+	.tech i{
+		padding:0;
+	}
+	.element img{
+		  width: 100px;
+  		  height: 100px;
+	}
 }
