@@ -36,4 +36,12 @@
 	.testimonial{
 		display: none;
 	}
+	.all-certificates img{
+  width: 100px;
+  height:150px;
+  margin-left: 50px;
+  padding: 3px;
+}
+
+
 }
