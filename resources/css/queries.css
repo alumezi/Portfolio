@@ -17,11 +17,23 @@
 	.element{
 		padding: 0;
 	}
-	.tech i{
-		padding:0;
+	.tech{
+		display: none;
+	}
+	#port{
+		display: none;
 	}
 	.element img{
 		  width: 100px;
   		  height: 100px;
+	}
+	.inside-portfolio{
+		flex-wrap: wrap;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	.testimonial{
+		display: none;
 	}
 }
