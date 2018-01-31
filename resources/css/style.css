@@ -44,10 +44,16 @@ header{
   display: inline-block;
   padding: 1%;
   font-size: 70px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 .logo i:hover{
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .box {
 
@@ -59,20 +65,29 @@ header{
 }
 section{
     margin: 2% auto auto 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .col{
   /* #539987   #32E875  #3D5467;*/
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px;
   letter-spacing: 1px;
   width: 30%;
   text-align: center;
   background-color: teal;
   border-radius: 5px;
+  -webkit-transition: border 0.2s;
+  -o-transition: border 0.2s;
   transition: border 0.2s;
 }
 a{
@@ -88,8 +103,11 @@ a{
 
 /*---------Testimonials-------*/
 .port{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .testimonial{
@@ -110,9 +128,15 @@ max-width: 25%;
 
 /*--------Portfolio-----------*/
 .portfolio{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     color:rgb(62, 62, 62);
     background-color: white;
     height: 100vh;
@@ -123,7 +147,9 @@ max-width: 25%;
 }
 #port{
   text-align: center;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   height: 50px;
   width: 200px;
   letter-spacing: 1px;
@@ -141,9 +167,13 @@ max-width: 25%;
   font-size: 40px;
 }
 .inside-portfolio{
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 
 }
 .element{
@@ -156,7 +186,10 @@ max-width: 25%;
 
 }
 .tech{
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
 }
@@ -184,9 +217,13 @@ h5{
 }
 .all-certificates{
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
   z-index: 0;
   margin-top: 15%;
 }
@@ -221,15 +258,22 @@ h5{
 }
 .mit:hover{
   opacity:0.9;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2)
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2)
 }
 .hidden img, #caption { 
-    animation-name: zoom;
-    animation-duration: 0.6s;
+    -webkit-animation-name: zoom; 
+            animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0);transform:scale(0)} 
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {-webkit-transform:scale(0);transform:scale(0)} 
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 .certificates p{
   display: inline-block;
@@ -272,17 +316,34 @@ footer{
     height: 200px;
     border-radius: 50%;
     border-bottom: 4px solid teal;
-    animation-name: earth;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: earth;
+            animation-name: earth;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes earth{
+    0%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
 }
 
 @keyframes earth{
     0%{
-        transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
     100%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
